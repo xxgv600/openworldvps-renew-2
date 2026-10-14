@@ -6,8 +6,8 @@ name: Openworld VPS 自动续期
 
 on:
   schedule:
-    # 每天 00:55 UTC（北京时间 12:55）自动执行
-    - cron: '55 0 * * *'
+    # 每两天 02:00 UTC（北京时间 10:00）自动执行
+    - cron: '0 2 */2 * *'
   workflow_dispatch:
     inputs:
       use_proxy:
